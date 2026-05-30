@@ -1,4 +1,3 @@
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -231,17 +230,16 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  
-  background-size: cover;
- 
-    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/EyvF0jkPg/man-working-on-laptop-computer-in-the-workplace_e3al7fiwx_thumbnail-1080_01.png');
-    
 
+  background-size: cover;
+  background: url("../img/banner.png") top center ;
+  position: relative;
+  
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1097,4 +1095,56 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+
+/* projects */
+
+.project-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(20, 157, 221, 0.25);
+}
+
+.project-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h5 {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #666;
+  min-height: 80px;
+}
+
+.project-content .btn {
+  border-radius: 4px;
+  padding: 8px 20px;
+  background: #149ddd;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
